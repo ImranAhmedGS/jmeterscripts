@@ -14,7 +14,7 @@ execution:
 
 
 settings:
-  artifacts-dir: /dev/shm/temp/
+  artifacts-dir: /dev/shm/
   aggregator: consolidator
   default-executor: jmeter
   check-interval: 1

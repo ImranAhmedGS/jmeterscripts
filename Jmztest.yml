@@ -10,7 +10,7 @@ execution:
   loop: forever
   throughput: 1
   scenario:
-        script: Google_WithoutListener.jmx
+        script: Google_WithListener.jmx
 
 
 settings:

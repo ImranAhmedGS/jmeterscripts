@@ -1,0 +1,20 @@
+modules:
+  jmeter:
+    properties:
+      myoutputdir: /dev/shm/
+
+execution:
+- concurrency: 10
+  ramp-up: 1m
+  hold-for: 1m30s
+  loop: forever
+  throughput: 1
+  scenario:
+        script: Google_WithoutListener.jmx
+
+
+settings:
+  artifacts-dir: /dev/shm/temp/
+  aggregator: consolidator
+  default-executor: jmeter
+  check-interval: 1

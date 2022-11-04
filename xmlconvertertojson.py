@@ -7,13 +7,13 @@ import logging
 def run(inpfilename):
 	filecontent=open(inpfilename).read()
 	
-xmlparser=xmltodict.parse(filecontent)
+    xmlparser=xmltodict.parse(filecontent)
 
-jso = json.dumps(xmlparser)
-jso = jso.replace('@',").replace('#',")
+    jso = json.dumps(xmlparser)
+    jso = jso.replace('@',").replace('#',")
 
-with open('outputfile1.ndl','w') as fileto:
-	fileto.write(jso)
+    with open('outputfile1.ndl','w') as fileto:
+        fileto.write(jso)
 
 # Just to rn this command
 # bq load -autodetect=true -source_format=NEWLINE_DELIMITED_JSON ctestmigration.errortable.outputfile.ndl

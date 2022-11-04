@@ -5,7 +5,7 @@ import logging
 
 
 def run(inpfilename):
-	filecontent=open(inpfilename).read()
+    filecontent=open(inpfilename).read()
 	
     xmlparser=xmltodict.parse(filecontent)
 
